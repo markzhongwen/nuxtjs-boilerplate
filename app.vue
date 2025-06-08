@@ -34,3 +34,9 @@
 </template>
 
 <script setup>
+// 暂时无 JS 脚本
+</script>
+
+<style scoped>
+/* 可选自定义样式 */
+</style>
