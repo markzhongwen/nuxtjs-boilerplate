@@ -1,47 +1,36 @@
 <template>
-  <div>
+  <main class="min-h-screen p-4 bg-gray-100">
+    <div class="max-w-2xl mx-auto">
+      <h1 class="text-3xl font-bold mb-4 text-center">
+        Interpreter Booking for China
+      </h1>
 
-import React from "react";
-import { Card, CardContent } from "../components/ui/card";
-import { Button } from "../components/ui/button";
-import { Input } from "../components/ui/input";
+      <div class="bg-white rounded-xl shadow p-4 mb-4">
+        <div class="space-y-4">
+          <div>
+            <label class="block mb-1 font-medium">Select Language</label>
+            <input type="text" placeholder="e.g. English to Chinese" class="w-full p-2 border border-gray-300 rounded" />
+          </div>
 
-export default function Home() {
-  return (
-    <main className="min-h-screen p-4 bg-gray-100">
-      <div className="max-w-2xl mx-auto">
-        <h1 className="text-3xl font-bold mb-4 text-center">
-          Interpreter Booking for China
-        </h1>
+          <div>
+            <label class="block mb-1 font-medium">Select City</label>
+            <input type="text" placeholder="e.g. Shanghai, Beijing" class="w-full p-2 border border-gray-300 rounded" />
+          </div>
 
-        <Card className="mb-4">
-          <CardContent className="space-y-4">
-            <div>
-              <label className="block mb-1 font-medium">Select Language</label>
-              <Input placeholder="e.g. English to Chinese" />
-            </div>
+          <div>
+            <label class="block mb-1 font-medium">Date</label>
+            <input type="date" class="w-full p-2 border border-gray-300 rounded" />
+          </div>
 
-            <div>
-              <label className="block mb-1 font-medium">Select City</label>
-              <Input placeholder="e.g. Shanghai, Beijing" />
-            </div>
-
-            <div>
-              <label className="block mb-1 font-medium">Date</label>
-              <Input type="date" />
-            </div>
-
-            <Button className="w-full">Search Interpreters</Button>
-          </CardContent>
-        </Card>
-
-        <div className="text-center text-sm text-gray-500">
-          Built for users looking for interpreters in mainland China. Easy to use and mobile friendly.
+          <button class="w-full px-4 py-2 bg-blue-600 text-white rounded">Search Interpreters</button>
         </div>
       </div>
-    </main>
-  );
-}
 
-  </div>
+      <div class="text-center text-sm text-gray-500">
+        Built for users looking for interpreters in mainland China. Easy to use and mobile friendly.
+      </div>
+    </div>
+  </main>
 </template>
+
+<script setup>
