@@ -1,42 +1,34 @@
 <template>
-  <main class="min-h-screen p-4 bg-gray-100">
-    <div class="max-w-2xl mx-auto">
-      <h1 class="text-3xl font-bold mb-4 text-center">
-        Interpreter Booking for China
+  <main class="min-h-screen bg-white text-gray-800 p-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-6">
+        Want to buy or travel in China.
       </h1>
+      <p class="text-xl font-semibold text-blue-600 mb-10">
+        WhatsApp Mark: <a href="https://wa.me/8613838276878" class="underline">+86 138 3827 6878</a>
+      </p>
 
-      <div class="bg-white rounded-xl shadow p-4 mb-4">
-        <div class="space-y-4">
-          <div>
-            <label class="block mb-1 font-medium">Select Language</label>
-            <input type="text" placeholder="e.g. English to Chinese" class="w-full p-2 border border-gray-300 rounded" />
-          </div>
+      <article class="bg-gray-100 p-6 rounded-xl shadow">
+        <h2 class="text-2xl font-bold mb-2">Why Visit China?</h2>
+        <p class="text-gray-700 mb-4">
+          Discover rich culture, ancient history, and modern innovation all in one country. Whether for business or pleasure, China offers a wide range of opportunities and experiences.
+        </p>
 
-          <div>
-            <label class="block mb-1 font-medium">Select City</label>
-            <input type="text" placeholder="e.g. Shanghai, Beijing" class="w-full p-2 border border-gray-300 rounded" />
-          </div>
-
-          <div>
-            <label class="block mb-1 font-medium">Date</label>
-            <input type="date" class="w-full p-2 border border-gray-300 rounded" />
-          </div>
-
-          <button class="w-full px-4 py-2 bg-blue-600 text-white rounded">Search Interpreters</button>
-        </div>
-      </div>
-
-      <div class="text-center text-sm text-gray-500">
-        Built for users looking for interpreters in mainland China. Easy to use and mobile friendly.
-      </div>
+        <h2 class="text-xl font-semibold mb-2">Our Service</h2>
+        <p class="text-gray-700">
+          We provide interpreter booking, travel tips, shopping help, and more for anyone who wants to explore China with confidence.
+        </p>
+      </article>
     </div>
   </main>
 </template>
 
 <script setup>
-// 暂时无 JS 脚本
+// No JavaScript logic for now
 </script>
 
 <style scoped>
-/* 可选自定义样式 */
+body {
+  font-family: sans-serif;
+}
 </style>
