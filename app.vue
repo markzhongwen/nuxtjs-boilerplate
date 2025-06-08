@@ -1,34 +1,39 @@
 <template>
-  <main class="min-h-screen bg-white text-gray-800 p-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <h1 class="text-4xl font-bold mb-6">
-        Want to buy or travel in China.
+  <main
+    class="min-h-screen bg-cover bg-center text-white flex items-center justify-center px-6"
+    style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6f/Mutianyu_Great_Wall_-_April_2018.jpg')"
+  >
+    <div class="bg-black bg-opacity-60 p-8 rounded-xl max-w-3xl text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+        Want to Buy or Travel in China?
       </h1>
-      <p class="text-xl font-semibold text-blue-600 mb-10">
-        WhatsApp Mark: <a href="https://wa.me/8613838276878" class="underline">+86 138 3827 6878</a>
+
+      <p class="text-xl mb-6">
+        🧳 We provide trusted <strong>Sourcing Agent Services</strong> to help you buy safely and smartly in China.
       </p>
 
-      <article class="bg-gray-100 p-6 rounded-xl shadow">
-        <h2 class="text-2xl font-bold mb-2">Why Visit China?</h2>
-        <p class="text-gray-700 mb-4">
-          Discover rich culture, ancient history, and modern innovation all in one country. Whether for business or pleasure, China offers a wide range of opportunities and experiences.
-        </p>
+      <p class="text-lg mb-4">
+        💼 <strong>Mark</strong> has over <strong>15 years of experience</strong>, helping more than <strong>3,000 clients</strong> from all over the world source products and travel with ease in China.
+      </p>
 
-        <h2 class="text-xl font-semibold mb-2">Our Service</h2>
-        <p class="text-gray-700">
-          We provide interpreter booking, travel tips, shopping help, and more for anyone who wants to explore China with confidence.
-        </p>
-      </article>
+      <a
+        href="https://wa.me/8613838276878"
+        target="_blank"
+        class="inline-block mt-6 px-6 py-3 bg-green-500 hover:bg-green-600 rounded-full text-white font-semibold text-lg"
+      >
+        📲 Chat with Mark on WhatsApp: +86 138 3827 6878
+      </a>
     </div>
   </main>
 </template>
 
 <script setup>
-// No JavaScript logic for now
+// No script logic needed
 </script>
 
 <style scoped>
 body {
-  font-family: sans-serif;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
 }
 </style>
