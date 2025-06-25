@@ -437,6 +437,8 @@ const FloatingWhatsApp = () => {
     </div>
   );
 };
+
+const Home = () => {
   const helloWorldApi = async () => {
     try {
       const response = await axios.get(`${API}/`);
