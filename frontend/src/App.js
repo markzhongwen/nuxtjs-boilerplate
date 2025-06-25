@@ -461,6 +461,7 @@ const Home = () => {
       <Experience />
       <Contact />
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 };
