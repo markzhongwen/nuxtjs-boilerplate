@@ -239,6 +239,15 @@ const Experience = () => {
 };
 
 const Contact = () => {
+  const openWhatsApp = () => {
+    window.open('https://wa.me/8613838276878?text=Hello%20Mark%2C%20I%27m%20interested%20in%20your%20interpreter%20services.', '_blank');
+  };
+
+  const copyWeChatId = () => {
+    navigator.clipboard.writeText('13838276878');
+    alert('WeChat ID copied to clipboard!');
+  };
+
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-blue-900 to-purple-900 text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -248,6 +257,37 @@ const Contact = () => {
             Let's discuss your interpretation needs and how I can help bridge the language gap 
             for your next project or business venture.
           </p>
+        </div>
+        
+        {/* Quick Contact Methods */}
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div 
+            onClick={openWhatsApp}
+            className="bg-green-600 bg-opacity-20 backdrop-blur-sm rounded-2xl p-6 cursor-pointer hover:bg-opacity-30 transition-all group"
+          >
+            <div className="flex items-center space-x-4">
+              <div className="text-4xl">📱</div>
+              <div>
+                <h3 className="text-xl font-bold text-green-300 group-hover:text-green-200">WhatsApp</h3>
+                <p className="text-green-200">+86 138 3827 6878</p>
+                <p className="text-sm text-green-300">Click to chat instantly</p>
+              </div>
+            </div>
+          </div>
+          
+          <div 
+            onClick={copyWeChatId}
+            className="bg-blue-600 bg-opacity-20 backdrop-blur-sm rounded-2xl p-6 cursor-pointer hover:bg-opacity-30 transition-all group"
+          >
+            <div className="flex items-center space-x-4">
+              <div className="text-4xl">💬</div>
+              <div>
+                <h3 className="text-xl font-bold text-blue-300 group-hover:text-blue-200">WeChat</h3>
+                <p className="text-blue-200">13838276878</p>
+                <p className="text-sm text-blue-300">Click to copy WeChat ID</p>
+              </div>
+            </div>
+          </div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -260,7 +300,11 @@ const Contact = () => {
               </div>
               <div className="flex items-center">
                 <span className="text-2xl mr-4">📱</span>
-                <span className="text-blue-200">Phone and WeChat available</span>
+                <span className="text-blue-200">WhatsApp: +86 138 3827 6878</span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-2xl mr-4">💬</span>
+                <span className="text-blue-200">WeChat ID: 13838276878</span>
               </div>
               <div className="flex items-center">
                 <span className="text-2xl mr-4">🌍</span>
