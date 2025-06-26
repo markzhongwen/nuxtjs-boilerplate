@@ -14,19 +14,13 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/check-outdated-build.client.js")> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/revive-payload.server.js")> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/chunk-reload.client.js")> &
-  InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/prefetch.client.js")> &
-  InjectionType<typeof import("../../node_modules/@nuxt/ui/dist/runtime/plugins/slideovers.js")> &
-  InjectionType<typeof import("../../node_modules/@nuxt/ui/dist/runtime/plugins/modals.js")> &
-  InjectionType<typeof import("../../node_modules/@nuxt/ui/dist/runtime/plugins/colors.js")> &
-  InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server.js")> &
-  InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.client.js")> &
-  InjectionType<typeof import("../../node_modules/@nuxt/icon/dist/runtime/plugin.js")>
+  InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/prefetch.client.js")>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }
 
   interface NuxtAppLiterals {
-    pluginName: 'nuxt:revive-payload:client' | 'nuxt:head' | 'nuxt:router' | 'nuxt:payload' | 'nuxt:revive-payload:server' | 'nuxt:chunk-reload' | 'nuxt:global-components' | 'nuxt:prefetch' | '@nuxt/icon'
+    pluginName: 'nuxt:revive-payload:client' | 'nuxt:head' | 'nuxt:router' | 'nuxt:payload' | 'nuxt:revive-payload:server' | 'nuxt:chunk-reload' | 'nuxt:global-components' | 'nuxt:prefetch'
   }
 }
 
