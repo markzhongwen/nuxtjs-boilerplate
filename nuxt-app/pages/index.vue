@@ -27,16 +27,21 @@
 </template>
 
 <script setup>
-// Test backend connection
-const { $fetch } = useNuxtApp()
-const config = useRuntimeConfig()
+// SEO Head
+useHead({
+  title: 'Mark - Professional Chinese Interpreter Services | 15 Years Experience',
+  meta: [
+    { name: 'description', content: 'Professional Chinese interpreter with 15 years of sourcing and interpretation experience. Providing expert conference, buying, and travel interpretation services in China.' }
+  ]
+})
 
+// Test backend connection (client-side only)
 onMounted(async () => {
   try {
     const response = await $fetch('/api/')
-    console.log('Backend connected:', response.message)
+    console.log('API connected:', response.message)
   } catch (error) {
-    console.error('Backend connection error:', error)
+    console.log('API connection error (this is normal on static sites):', error)
   }
 })
 </script>
