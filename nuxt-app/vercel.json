@@ -1,6 +1,10 @@
 {
-  "buildCommand": "yarn build",
+  "functions": {
+    "app/**": {
+      "maxDuration": 30
+    }
+  },
+  "buildCommand": "npm run build",
   "outputDirectory": ".output/public",
-  "devCommand": "yarn dev",
-  "installCommand": "yarn install"
+  "installCommand": "npm install"
 }
